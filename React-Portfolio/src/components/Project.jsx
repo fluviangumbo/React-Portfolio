@@ -4,12 +4,14 @@ export default function Project() {
     const projects = [
         {
             image: './images/WHATEVER_IMAGE', // Don't leave this
+            imageAlt: 'A CLI application deployed using PostgreSQL',
             title: 'PostgreSQL CMS for Employers',
             deployed: '',
             repository: 'https://github.com/fluviangumbo/SQL-CLI-App',
         },
         {
             image: './images/...',
+            imageAlt: 'A weather forecast web application',
             title: 'Weather API Web Application',
             deployed: 'https://weather-api-app-uhqg.onrender.com/',
             repository: 'https://github.com/fluviangumbo/Weather-API-App',
@@ -21,7 +23,7 @@ export default function Project() {
             <ul>
                 {
                     projects.map((project) => {
-                        <ProjectCard image={project.image} title={project.title} deployed={project.deployed} repository={project.repository} />
+                        <ProjectCard image={project.image} imageAlt={project.imageAlt} title={project.title} deployed={project.deployed} repository={project.repository} />
                     })
                 }
             </ul>

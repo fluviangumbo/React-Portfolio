@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import Project from './components/Project'
 
 function App() {
   return <div className="portfolio-app">
@@ -21,4 +22,4 @@ function App() {
   </div>
 }
 
-export default App
+export default App;

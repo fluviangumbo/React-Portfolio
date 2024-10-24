@@ -2,21 +2,11 @@ import { Link } from 'react-router-dom'
 
 export default function Nav() {
     return (
-        <div>
-            <ul>
-                <li>
-                    <Link to="/">Portfolio</Link>
-                </li>
-                <li>
-                    <Link to="/About">About Me</Link>
-                </li>
-                <li>
-                    <Link to="/Contact">Contact</Link>
-                </li>
-                <li>
-                    <Link to="/Resume">Resume</Link>
-                </li>
-            </ul>
+        <div>                            
+            <Link to="/" className="nav">Portfolio</Link>                                
+            <Link to="/About" className="nav">About Me</Link>                               
+            <Link to="/Contact" className="nav">Contact</Link>                                
+            <Link to="/Resume" className="nav">Resume</Link>            
         </div>
     )
 }

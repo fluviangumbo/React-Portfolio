@@ -32,11 +32,11 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--dark-brown);
+  color: var(--earth-green);
 }
 
 body {
-  background-color: var(--light-blue);
+  background-color: var(--light-green);
   margin: 0;
   display: flex;
   place-items: center;
@@ -53,9 +53,13 @@ footer {
 
 footer a {
   font-weight: 500;
-  color: var(--earth-green);
+  color: var(--dark-brown);
   text-decoration: inherit;
   padding: 10px;
+}
+
+footer a:hover {
+  color: var(--primary-blue)
 }
 
 footer a svg {
@@ -70,6 +74,11 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   text-align: left;
+  color: var(--light-blue);
+}
+
+h3 {
+  color: var(--primary-blue)
 }
 
 header div {
@@ -79,6 +88,11 @@ header div {
 
 header div a {
   padding-right: 50px;
+}
+
+li {
+  text-align: left;
+  color: var(--earth-green)
 }
 
 li a {

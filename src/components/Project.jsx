@@ -2,13 +2,6 @@ import ProjectCard from './ProjectCard';
 
 export default function Project() {
     const projects = [
-        // {   NO DB HOSTED ANYWHERE OTHER THAN LOCAL
-        //     // image: './images/WHATEVER_IMAGE', // Don't leave this
-        //     imageAlt: 'A CLI application deployed using PostgreSQL',
-        //     title: 'PostgreSQL CMS for Employers',
-        //     deployed: '',
-        //     repository: 'https://github.com/fluviangumbo/SQL-CLI-App',
-        // },
         {
             // image: './images/...',
             imageAlt: 'A weather forecast web application',

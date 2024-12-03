@@ -1,3 +1,4 @@
+import React from 'react'
 import ProjectCard from './ProjectCard';
 
 export default function Project() {
@@ -48,13 +49,15 @@ export default function Project() {
 
     return (
         <section>
-            <ul>
+            <div className="row">
                 {
                     projects.map((project, i) => (
-                        <ProjectCard image={project.image} className="project-card" imageAlt={project.imageAlt} title={project.title} deployed={project.deployed} repository={project.repository} key={i} />
+                        <div key={i} className="col col-md-6">
+                            <ProjectCard image={project.image} className="projects" imageAlt={project.imageAlt} title={project.title} deployed={project.deployed} repository={project.repository} key={i} />
+                        </div>
                     ))
                 }
-            </ul>
+            </div>
         </section>
     );
 }

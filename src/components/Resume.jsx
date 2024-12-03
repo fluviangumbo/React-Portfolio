@@ -1,7 +1,6 @@
 export default function Resume() {
     return (
         <section className="resume" >
-            <h2>Resume</h2>
             <h3>Front-End Skills</h3>
             <ul>
                 <li>HTML</li>

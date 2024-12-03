@@ -3,11 +3,11 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --primary-blue: #086788;
-  --light-blue: #87BCDE;
-  --light-green: #D3F9B5;
-  --earth-green: #82846D;
-  --dark-brown: #5C573E;
+  --navy: #0A2F51;
+  --light-blue: #00A9E0;
+  --beige: #FFF1E0;
+  --soft-orange: #FFA07A;
+  --charcoal: #404040;
 
   background-color: var(--light-blue);
 
@@ -18,7 +18,7 @@
 }
 
 header {
-  background-color: var(--primary-blue);
+  background-color: var(--navy);
 
   position: fixed;
   top: 0;
@@ -28,15 +28,15 @@ header {
 
 a {
   font-weight: 500;
-  color: var(--earth-green);
+  color: var(--light-blue);
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--earth-green);
+  color: var(--soft-orange);
 }
 
 body {
-  background-color: var(--light-green);
+  background-color: var(--beige);
   margin: 0;
   display: flex;
   place-items: center;
@@ -49,17 +49,18 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: var(--navy);
 }
 
 footer a {
   font-weight: 500;
-  color: var(--dark-brown);
+  color: var(--light-blue);
   text-decoration: inherit;
   padding: 10px;
 }
 
 footer a:hover {
-  color: var(--primary-blue)
+  color: var(--soft-orange)
 }
 
 footer a svg {
@@ -78,7 +79,7 @@ h1 {
 }
 
 h3 {
-  color: var(--primary-blue)
+  color: var(--navy)
 }
 
 header div {
@@ -90,21 +91,21 @@ header div a {
   padding-right: 50px;
 }
 
-li {
+.project-card {
   text-align: left;
-  color: var(--earth-green)
+  color: var(--navy)
 }
 
-li a {
+.project-card a {
   font-weight: 500;
-  color: var(--earth-green);
+  color: var(--light-blue);
   text-decoration: inherit;
   padding: 5px;
 }
 
 img {
-  height: 18em;
-  width: 32em;
+  height: auto;
+  max-width: 50%;
 }
 
 button {
@@ -120,34 +121,62 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: var(--primary-blue);
+  border-color: var(--soft-orange);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.projects {
+  color: var(--soft-orange);
+}
+
 .project-card {
-  color: var(--light-green);
+  border-radius: 10px;
+  border: 1px solid var(--charcoal);
+  margin: 3px;
+  background-position: center;
+  background-size: cover;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 .resume {
-  color: var(--light-green);
+  color: var(--navy);
+  margin-top: 5rem;
 }
 
 .nav {
-  color: var(--light-green)
+  color: var(--light-blue)
 }
 
 @media (max-width: 600px) {
   :root {
-    color: var(--primary-blue);
+    color: var(--navy);
     background-color: var(--light-blue);
   }
   a:hover {
-    color: var(--dark-brown);
+    color: var(--charcoal);
   }
   button {
-    background-color: var(--light-green);
+    background-color: var(--soft-orange);
   }
 }

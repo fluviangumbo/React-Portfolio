@@ -8,7 +8,7 @@ export default function Contact() {
                 <p>Email:</p>
                 <input/>
                 <p>Message:</p>
-                <input/>
+                <textarea className="message"/>
             </form>
             <button>Submit</button>
         </div>

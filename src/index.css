@@ -75,7 +75,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   text-align: left;
-  color: var(--light-blue);
+  color: var(--soft-orange);
 }
 
 h3 {
@@ -98,9 +98,11 @@ header div a {
 
 .project-card a {
   font-weight: 500;
-  color: var(--light-blue);
+  color: var(--navy);
   text-decoration: inherit;
   padding: 5px;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 img {
@@ -129,34 +131,73 @@ button:focus-visible {
 }
 
 .projects {
+  display: flex;
+  flex-wrap: wrap;
   color: var(--soft-orange);
 }
 
 .project-card {
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 10px;
   border: 1px solid var(--charcoal);
   margin: 3px;
-  background-position: center;
-  background-size: cover;
+  background-color: var(--soft-orange)
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, .25fr);
+  gap: 10px;
+  width: 80%;
   margin-right: -15px;
   margin-left: -15px;
 }
 
 .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-right: 15px;
   padding-left: 15px;
 }
 
 @media (min-width: 768px) {
   .col-md-6 {
-    flex: 0 0 50%;
+    flex: 1 1 calc(50% - 10px);
     max-width: 50%;
+    width: 900px;
   }
+}
+
+/* @media (max-width: 767px) {
+  .col-md-6 {
+    flex: 0 0 
+    max-width: 50%;
+    width: 40%; 
+  }
+} */
+
+textarea {
+  width: 100%; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  padding: 10px; /* Adds space inside the textarea */
+  box-sizing: border-box; /* Includes padding in width/height */
+  border: 1px solid #ccc; /* Adds a border */
+  border-radius: 4px; /* Optional, rounds the corners */
+  font-family: Arial, sans-serif; /* Set a readable font */
+  font-size: 16px; /* Adjust text size */
+  line-height: 1.5; /* Adds spacing between lines */
+  resize: none; /* Prevents resizing (optional) */
+  overflow-wrap: break-word; /* Ensures long words break */
+}
+
+.about {
+  font-size: 1.5rem;
+}
+#ME {
+  font-size: 2rem;
 }
 
 .resume {

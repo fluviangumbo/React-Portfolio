@@ -20,7 +20,7 @@ export default function Project() {
             link: 'Hatching Meeples'
         },
         {
-            image: './src/images/...',
+            image: './src/images/readme-gen-screenshot.png',
             imageAlt: 'A CLI application for generating READMEs',
             title: 'CLI README.md Generator',
             deployed: 'N/A',
@@ -28,7 +28,7 @@ export default function Project() {
             link: 'N/A'
         },
         {
-            image: './src/images/...',
+            image: './src/images/ts-vehicle-screenshot.png',
             imageAlt: 'A CLI app for managing vehicles',
             title: 'TypeScript Vehicle CLI App',
             deployed: 'N/A',
@@ -36,7 +36,7 @@ export default function Project() {
             link: 'N/A'
         },
         {
-            image: './src/images/...',
+            image: './src/images/SQL-CMS-app-screenshot.png',
             imageAlt: 'A CLI app for managing employees and departments',
             title: 'Employee CMS CLI App',
             deployed: 'N/A',

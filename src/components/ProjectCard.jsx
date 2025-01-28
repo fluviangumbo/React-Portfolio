@@ -1,7 +1,7 @@
 export default function ProjectCard(props) {
     return (
         <div className="project-card" style={{
-            // backgroundImage: props.image ? `url(${props.image})` : "none",
+            backgroundImage: props.image ? `url(${props.image})` : "none",
             borderRadius: "10px",
             border: "1px solid var(--charcoal)",
             margin: "3px",

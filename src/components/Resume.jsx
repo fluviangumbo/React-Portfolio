@@ -3,7 +3,7 @@ export default function Resume() {
         <section className="resume" >
             <div className="resume-link">
                 <a href="https://docs.google.com/document/d/1W8q_r5Q_HEGPfssyZ4NbSgia3fyX4UK0KOtYzU5i4nc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-                    Checkout My Resume!
+                    See My Resume!
                 </a>
             </div>
             <div className="skills">

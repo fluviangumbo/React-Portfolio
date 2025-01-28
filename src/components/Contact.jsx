@@ -1,16 +1,12 @@
 export default function Contact() {
     return (
-        <div>
-            <h2>Contact</h2>
-            <form>
-                <p>Name:</p>
-                <input/>
-                <p>Email:</p>
-                <input/>
-                <p>Message:</p>
-                <textarea className="message"/>
-            </form>
-            <button>Submit</button>
+        <div className="contact">
+            <h2>Contact Me!</h2>
+            <div>
+                <p>The best wat to reach me is by email:</p>
+                <h3>jroney002@gmail.com</h3>
+                <p>Feel free to reach me at LinkedIn or check out my GitHub below!</p>
+            </div>
         </div>
     );
 }

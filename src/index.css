@@ -222,9 +222,21 @@ button:focus-visible {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 976px) {
-  body {
+@media (max-width: 1010px) {
+  .about-section h2 {
     margin-top: 60px;
+  }
+}
+
+@media (max-width: 960px) {
+  .about-section h2 {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 870px) {
+  .about-section h2 {
+    margin-top: 120px;
   }
 }
 
@@ -233,16 +245,20 @@ button:focus-visible {
     flex-direction: column;
   }
 
-  body {
-    margin-top: 120px;
-  }
-}
-
-@media (min-width: 768px) {
   .col-md-6 {
     flex: 1 1 calc(50% - 10px);
     max-width: 50%;
     width: 900px;
+  }
+
+  .resume-link {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-section h2 {
+    margin-top: 150px;
   }
 }
 
@@ -269,7 +285,7 @@ textarea {
 }
 
 .contact {
-  
+
 }
 
 .contact div h3 {

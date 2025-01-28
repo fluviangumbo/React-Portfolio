@@ -284,10 +284,6 @@ textarea {
   overflow-wrap: break-word; /* Ensures long words break */
 }
 
-.contact {
-
-}
-
 .contact div h3 {
   color: var(--soft-orange)
 }
@@ -297,6 +293,28 @@ textarea {
 }
 #ME {
   font-size: 2rem;
+}
+
+.resume-contact {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-contact a {
+  display: inline-block;
+  background-color: var(--soft-orange);
+  color: var(--navy);
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.resume-contact a:hover {
+  background-color: var(--light-blue);
+  color: var(--soft-orange);
 }
 
 .resume {

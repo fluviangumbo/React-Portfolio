@@ -273,6 +273,12 @@ button:focus-visible {
   margin-bottom: 0.5rem;
 }
 
+@media (max-width: 1120px) {
+  .project-container {
+    margin-top: 120px;
+  }
+}
+
 @media (max-width: 1010px) {
   .about-section h2 {
     margin-top: 60px;
@@ -303,6 +309,12 @@ button:focus-visible {
   } */
 
   .resume-link {
+    margin-top: 160px;
+  }
+}
+
+@media (max-width: 570px) {
+  .project-container {
     margin-top: 160px;
   }
 }

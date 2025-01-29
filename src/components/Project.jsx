@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 export default function Project() {
     const projects = [
         {
-            image: './src/images/Weather-API-App.png',
+            image: './images/Weather-API-App.png',
             imageAlt: 'A weather forecast web application',
             title: 'Weather API Web Application',
             deployed: 'https://weather-api-app-uhqg.onrender.com/',
@@ -12,7 +12,7 @@ export default function Project() {
             link: 'Weather App'
         },
         {
-            image: './src/images/Board-Game-Night.png',
+            image: './images/Board-Game-Night.png',
             imageAlt: 'A web application for creating groups and organizing board game nights.',
             title: 'Boardgame Night Organizer',
             deployed: 'https://board-game-night.onrender.com',
@@ -20,7 +20,7 @@ export default function Project() {
             link: 'Hatching Meeples'
         },
         {
-            image: './src/images/readme-gen-screenshot.png',
+            image: './images/readme-gen-screenshot.png',
             imageAlt: 'A CLI application for generating READMEs',
             title: 'CLI README.md Generator',
             deployed: 'N/A',
@@ -28,7 +28,7 @@ export default function Project() {
             link: 'N/A'
         },
         {
-            image: './src/images/ts-vehicle-screenshot.png',
+            image: './images/ts-vehicle-screenshot.png',
             imageAlt: 'A CLI app for managing vehicles',
             title: 'TypeScript Vehicle CLI App',
             deployed: 'N/A',
@@ -36,7 +36,7 @@ export default function Project() {
             link: 'N/A'
         },
         {
-            image: './src/images/SQL-CMS-app-screenshot.png',
+            image: './images/SQL-CMS-app-screenshot.png',
             imageAlt: 'A CLI app for managing employees and departments',
             title: 'Employee CMS CLI App',
             deployed: 'N/A',
@@ -44,7 +44,7 @@ export default function Project() {
             link: 'N/A'
         },
         {
-            image: './src/images/Mgmt-Calendar.png',
+            image: './images/Mgmt-Calendar.png',
             imageAlt: 'A weekly organizer for managers/employers',
             title: 'Management Week Organizer',
             deployed: 'https://fluviangumbo.github.io/Management-Calendar/',

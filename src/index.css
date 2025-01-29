@@ -103,7 +103,7 @@ header div a {
   padding-right: 50px;
 }
 
-.project-card {
+/* .project-card {
   text-align: left;
   color: var(--navy)
 }
@@ -115,7 +115,7 @@ header div a {
   padding: 5px;
   flex-wrap: wrap;
   justify-content: left;
-}
+} */
 
 img {
   height: auto;
@@ -142,7 +142,58 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.projects {
+/* NEW */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: var(--soft-orange);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-content h3 {
+  color: var(--navy);
+  margin: 0;
+}
+
+.project-content a {
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.project-content a:hover {
+  color: var(--light-blue);
+}
+/* NEW */
+
+/* .projects {
   display: flex;
   flex-wrap: wrap;
   color: var(--soft-orange);
@@ -155,9 +206,9 @@ button:focus-visible {
   border: 1px solid var(--charcoal);
   margin: 3px;
   background-color: var(--soft-orange)
-}
+} */
 
-.row {
+/* .row {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3, .25fr);
@@ -165,15 +216,15 @@ button:focus-visible {
   width: 80%;
   margin-right: -15px;
   margin-left: -15px;
-}
+} */
 
-.col {
+/* .col {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 15px;
   padding-left: 15px;
-}
+} */
 
 .resume-link {
   text-align: center;
@@ -245,11 +296,11 @@ button:focus-visible {
     flex-direction: column;
   }
 
-  .col-md-6 {
+  /* .col-md-6 {
     flex: 1 1 calc(50% - 10px);
     max-width: 50%;
     width: 900px;
-  }
+  } */
 
   .resume-link {
     margin-top: 160px;

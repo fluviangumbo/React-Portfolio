@@ -54,14 +54,22 @@ export default function Project() {
     ];
 
     return (
-        <div className="row">
-            {
-                projects.map((project, i) => (
-                    <div key={i} className="col col-md-6">
-                        <ProjectCard className="projects" image={project.image} imageAlt={project.imageAlt} title={project.title} deployed={project.deployed} repository={project.repository} link={project.link} key={i} />
-                    </div>
-                ))
-            }
+        <div className="project-container">
+            {projects.map((project, i) => (
+                <ProjectCard key={i} {...project} />
+            ))}
         </div>
     );
+
+    // return (
+    //     <div className="row">
+    //         {
+    //             projects.map((project, i) => (
+    //                 <div key={i} className="col col-md-6">
+    //                     <ProjectCard className="projects" image={project.image} imageAlt={project.imageAlt} title={project.title} deployed={project.deployed} repository={project.repository} link={project.link} key={i} />
+    //                 </div>
+    //             ))
+    //         }
+    //     </div>
+    // );
 }
